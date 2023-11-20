@@ -1,0 +1,187 @@
+#main-bg {
+  background-image: url(../img/backgroun_image.jpg);
+  padding: 0 0 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.header h1 {
+  color: red;
+  font-size: 50px;
+  font-weight: 800;
+  margin-top: 50px;
+  letter-spacing: 10px;
+  word-spacing: 10px;
+  text-shadow: -10px 10px 10px rgba(0, 0, 0, 0.68);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  padding: 50px;
+  box-shadow: 0px 1px 37px 20px rgba(252, 0, 196, 0.62);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.clock-border {
+  width: 600px;
+  height: 180px;
+  border-radius: 8px;
+  display: flex;
+  background-color: #000000;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  border: 5px solid #ff03b8;
+  outline: 5px solid #ffffff;
+  box-shadow: 25px 29px 20px 0px rgba(0, 0, 0, 0.75);
+}
+.clock h2 {
+  padding: 30px 0px;
+  font-size: 95px;
+  font-weight: bold;
+  font-family: "Electrolize", sans-serif;
+  color: #fe0201;
+  width: 200px;
+}
+.position {
+  position: absolute;
+  color: #fe0201;
+  bottom: 5px;
+  right: 10px;
+}
+
+.tweelve-hour {
+  padding: 10px 19px;
+  background-color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  z-index: 0;
+}
+.tweelve-hour span{
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 12px;
+  z-index: -53;
+}
+
+.tweelve-hour-on {
+  padding: 10px;
+  position: absolute;
+  background-color: rgb(11, 117, 255);
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  -webkit-transform: translate(-50% -50%);
+  -moz-transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  -o-transform: translate(-50% -50%);
+}
+
+.mm {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  color: #fe0201;
+}
+.hourtext {
+  position: absolute;
+  top: 0;
+  right: 60px;
+}
+.hourtext span{
+  color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .header h1 {
+    color: red;
+    font-size: 30px;
+    margin-top: 71px;
+    letter-spacing: 8px;
+    word-spacing: 0px;
+    padding: 25px;
+  }
+  .clock {
+    margin-top: 50px;
+  }
+  .clock-border {
+    width: 310px;
+    height: 135px;
+  }
+  .clock h2 {
+    padding: 30px 0px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Electrolize", sans-serif;
+    color: #fe0201;
+    width: 100px;
+  }
+  .position {
+    position: absolute;
+    color: #fe0201;
+    bottom: 5px;
+    right: 25px;
+  }
+  .mm {
+    bottom: 10px;
+    right: 5px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #main-bg {
+    padding: 0px 0 50px;
+  }
+  .header h1 {
+    font-size: 45px;
+    padding: 25px;
+  }
+  .clock {
+    margin-top: 70px;
+  }
+  .clock-border {
+    width: auto;
+    height: 120px;
+  }
+  .clock h2 {
+    padding: 0;
+    font-size: 85px;
+    width: 170px;
+  }
+  .position {
+    right: 25px;
+    bottom: -2px;
+  }
+  
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
